@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import axios from 'axios'
+// import axios from 'axios'
 import { io } from 'socket.io-client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -34,25 +34,33 @@ function App() {
   };
 
   return (
-    <div className="container text-center mt-5 pt-5">
+    <div className="wrapper">
+
+    <div className="container text-center  pt-5 ">
       <h2>Couple Sync Player</h2>
-      
+      <br />
       <div className="mb-4">
         <button className='btn btn-lg btn-primary me-2' onClick={handlePlayClick}>Play for Both</button>
         <button className='btn btn-lg btn-danger' onClick={handlePauseClick}>Pause for Both</button>
       </div>
 
       <div>
-        <audio ref={audioRef} className="w-100">
+        <audio ref={ audioRef } className="w-100" >
           <source src="https://couplemusic-backend.onrender.com/static-music/song.mp3" type="audio/mpeg" />
         </audio>
       </div>
 
+      <audio src="asd"></audio>
 
+{/* 
       <button className="btn btn-primary" onClick={ async () => {
         await axios.get('https://couplemusic-backend.onrender.com/test').then(e => alert(e.data))
-      }}>test</button>
+        }}>test</button> 
+        */}
+      <hr />
+      <p>for kimi <h1 className='text-danger'>♥</h1></p>
     </div>
+        </div>
   );
 }
 

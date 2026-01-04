@@ -1,0 +1,15 @@
+.container{
+    background: #f0f0f07a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+    backdrop-filter: blur(100px);
+}
+*{
+    margin: 0;
+}
+.wrapper{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background: radial-gradient(circle,rgba(0, 43, 255, 1) 0%, rgba(255, 0, 234, 1) 100%);
+}
